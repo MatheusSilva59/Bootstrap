@@ -72,13 +72,22 @@
         font-weight: 400;
       }
       footer a{
-        color: white;
         font-size: .8rem;
+        color: white;
+      }
+      footer .custom-link a{
+        text-decoration: none;
+      }
+      .custom-link a:hover{
+        color: #9bf0e1;
       }
       footer .icon{
         width: 60px;
         height: 60px;
         background-color: #202020;
+        display: flex;
+        align-self: center;
+        justify-content: center;
       }
       .icon-animation:hover{
         font-size: 2.7rem;
@@ -191,60 +200,72 @@
     <footer class="pt-5 pb-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
-            <img class="img-fluid" src="images/spotify.svg" alt="">
+          <div class="col-6 offset-3 col-md-2 offset-md-0 mb-3 mb-md-0">
+            <img class="img-fluid" src="images/spotify.svg" alt="spotify logo">
           </div>
-          <div class="col-md-2">
-            <h6>Company</h6>
-            <ul class="list-unstyled ml-2">
-              <li>
-                <a href="">Sobre</a>
-              </li>
-              <li>
-                <a href="">Empregos</a>
-              </li>
-              <li>
-                <a href="">Imprensa</a>
-              </li>
-              <li>
-                <a href="">Novidades</a>
-              </li>
-            </ul>
+          <div class="col-md-6 row">
+            <div class="col-md-4">
+              <h6>Company</h6>
+              <ul class="navbar-nav custom-link mb-2 mb-md-0">
+                <li>
+                  <a class="" href="">Sobre</a>
+                </li>
+                <li>
+                  <a href="">Empregos</a>
+                </li>
+                <li>
+                  <a href="">Imprensa</a>
+                </li>
+                <li>
+                  <a href="">Novidades</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Comunidades</h6>
+              <ul class="navbar-nav custom-link mb-2 mb-md-0">
+                <li>
+                  <a href="">Artistas</a>
+                </li>
+                <li>
+                  <a href="">Desenvolvedores</a>
+                </li>
+                <li>
+                  <a href="">Marcas</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Link Úteis</h6>
+              <ul class="navbar-nav custom-link mb-2 mb-md-0">
+                <li>
+                  <a href="">Ajuda</a>
+                </li>
+                <li>
+                  <a href="">Presentes</a>
+                </li>
+                <li>
+                  <a href="">Player da web</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-2">
-            <h6>Comunidades</h6>
-            <ul class="list-unstyled ml-2">
-              <li>
-                <a href="">Artistas</a>
-              </li>
-              <li>
-                <a href="">Desenvolvedores</a>
-              </li>
-              <li>
-                <a href="">Marcas</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h6>Link Úteis</h6>
-            <ul class="list-unstyled ml-2">
-              <li>
-                <a href="">Ajuda</a>
-              </li>
-              <li>
-                <a href="">Presentes</a>
-              </li>
-              <li>
-                <a href="">Player da web</a>
-              </li>
-            </ul>
-          </div>
-          <div class="offset-md-1 col-md-3">
-            <span class="icon d-inline-block rounded-circle d-flex justify-content-center">
+          <div class="offset-md-1 col-md-3 d-flex flex-row justify-content-center">
+            <div class="icon rounded-circle mx-1 align-self-start">
               <a class="align-self-center" href="">
                 <i class="fa-brands fa-instagram fa-3x icon-animation"></i>
               </a>
-            </span>
+            </div>
+            <div class="icon rounded-circle mx-1 align-self-start">
+              <a class="align-self-center" href="">
+                <i class="fa-brands fa-twitter fa-3x icon-animation"></i>
+              </a>
+            </div>
+            <div class="icon rounded-circle mx-1 align-self-start">
+              <a class="align-self-center" href="">
+                <i class="fa-brands fa-facebook fa-3x icon-animation"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
